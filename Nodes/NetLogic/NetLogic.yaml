@@ -1,2 +1,29 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
+Children:
+- Name: SherlockOptix
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: GetProjectDiagnostics
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "344ce03e2d066cc161c115315e1e9370",
+       "objectGuid": "f0235633dfff3a78d4eb167386ffab8e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
